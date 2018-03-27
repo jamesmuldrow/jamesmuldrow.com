@@ -1,0 +1,99 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="Codespace.blog">
+
+  <title>JamesMuldrow.com</title>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+  <div class="row">
+    <nav class="col-lg header">
+      <ul>
+        <li><a href="https://codespace.blog">Blog </a></li> | 
+        <li><a href="https://www.linkedin.com/in/james-muldrow-6b555524">LinkedIn </a></li> |
+        <li><a href="https://www.facebook.com/james.muldrow">Facebook </a></li> |
+        <li><a href="https://www.instagram.com/jamesmuldrow/">Instagram </a></li> |
+        <li><a href="https://twitter.com/Nacho7C0">Twitter</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="row content">
+    <div class="col-lg reserve-side">
+      <span style="font-size:35px;font-weight:normal;
+                   color:#ffffff; text-shadow: -1px 0 #FFD700, 0 1px #FFD700,
+                   1px 0 #FFD700, 0 -1px #FFD700;">MULDROW, JAMES A.</span>
+      <br /><span style="font-size:25px;font-weight:normal;color:#FFD700;">Active Duty U.S. Marine</span>
+    </div>
+    <div class="col-lg left-side">
+      <div class="col-sm GIAC">
+        GIAC<br />Certified Incident<br />Handler
+      </div>
+      <div class="col-sm Web-Dev">
+        Web Developer<br /><span>PHP | JS | HTML | CSS</span>
+      </div>
+      <div class="col-sm IOS-Dev" style="">
+        iOS Developer<br /><span style="">Swift | Spritekit</span>
+      </div>
+    </div>
+    <div class="col-lg middle" >
+        <img class="my_image" src="assets/my_photo.png" alt="no image" >
+    </div>
+    <div class="col-lg right-side">
+      <span style="font-size:35px;font-weight:normal;
+                   color:#ffffff; text-shadow: -1px 0 #FFD700, 0 1px #FFD700,
+                   1px 0 #FFD700, 0 -1px #FFD700;">MULDROW, JAMES A.</span>
+      <br /><span style="font-size:25px;font-weight:normal;color:#FFD700;">Active Duty U.S. Marine</span>
+    </div>
+
+    <div class="col-lg reserve-side">
+      <div class="col-sm GIAC color-mod">
+        GIAC<br />Certified Incident<br />Handler
+      </div>
+      <div class="col-sm Web-Dev color-mod">
+        Web Developer<br /><span>PHP | JS | HTML | CSS</span>
+      </div>
+      <div class="col-sm IOS-Dev color-mod" style="">
+        iOS Developer<br /><span style="">Swift | Spritekit</span>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function() {
+      console.log("Document Ready!");
+      //console.log($(".header"))
+      // run test on initial page load
+      checkSize();
+
+      // run test on resize of the window
+      $(window).resize(checkSize);
+    });
+
+    //Function to the css rule
+    function checkSize(){
+      if ($(".header").css("text-align") == "center") {
+        $(".header").css("margin-top", "100px");
+        $(".middle").css("margin-top", "50px");
+        $(".right-side").css("margin-top", "100px");
+        $(".left-side").hide();
+        $(".right-side").hide();
+        $(".color-mod").css("color", "#fff");
+        $(".reserve-side").css("margin-top", "50px");
+
+      } else {
+        $(".reserve-side").hide();
+      }
+    }
+  </script>
+</body>
+</html>

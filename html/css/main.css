@@ -1,0 +1,163 @@
+html, body
+{
+    height: 100%;
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+@media only screen
+and (min-device-width : 230px)
+and (max-device-width : 991px){
+	body {
+		background-image: url("http://192.168.1.249:8080/assets/mobile_background.png");
+		background-repeat: no-repeat;
+		background-size:cover;
+		background-position:center;
+	}
+	.content {
+		/* margin-top: 50px;
+		min-height: 60vh; */
+		align-items: center;
+		text-align: center;
+		//border: 1px solid blue;
+
+	}
+	.header {
+		text-align: center;
+		color: #333333;
+		font-weight:lighter;
+		//border: 1px solid blue;
+	}
+	ul {
+	    list-style-type: none;
+	    margin: 0;
+	    padding: 0;
+	}
+	li {
+		display: inline;
+	}
+	.header a {
+		color: #FFD700;
+		font-size: 34px;
+		font-weight:normal;
+	}
+	.header a:hover {
+		color: #FFD700;
+	}
+
+	.header a:visited {
+		color: #FFD700;
+	}
+	.my_image {
+		width: 50%;
+		height: auto;
+		//border: 1px solid blue;
+	}
+
+	.GIAC {
+		color: #0A4C4D;
+		font-weight:bold;
+		font-size:20px;
+		padding-bottom: 40px
+	}
+
+	.Web-Dev {
+		color: #0A4C4D;
+		font-weight:bold;
+		font-size:20px;
+		padding-bottom: 40px;
+	}
+
+	.Web-Dev span {
+		font-weight:lighter;
+		font-size:16px;
+	}
+
+	.IOS-Dev{
+		color: #0A4C4D;
+		font-weight:bold;
+		font-size:20px;
+	}
+
+	.IOS-Dev span{
+		font-weight:lighter;
+		font-size:16px;
+	}
+
+	.mobile-name-placement{
+		text-align: center;
+	}
+}
+
+@media only screen
+and (min-device-width : 991px) {
+	body {
+		background-image: url("http://192.168.1.249:8080/assets/background.png");
+		background-repeat: no-repeat;
+		background-size:cover;
+		background-position:center;
+	}
+	.content {
+		min-height: 100vh;
+		align-items: center;
+		text-align: center;
+		//border: 1px solid blue;
+	}
+	.header {
+		text-align: right;
+		color: #FFD700;
+		font-weight:lighter;
+		//border: 1px solid blue;
+	}
+	ul {
+	    list-style-type: none;
+	    margin: 0;
+	    padding: 0;
+	}
+	li {
+		display: inline;
+	}
+	.header a {
+		color: #FFD700;
+	}
+	.header a:hover {
+		color: #ffffff;
+	}
+
+	.header a:visited {
+		color: #FFD700;
+	}
+	.my_image {
+		width: 83%;
+		height: auto;
+		//border: 1px solid blue;
+	}
+	.GIAC {
+		color: #0A4C4D;
+		font-weight:bold;
+		font-size:20px;
+		padding-bottom: 40px
+	}
+
+	.Web-Dev {
+		color: #0A4C4D;
+		font-weight:bold;
+		font-size:20px;
+		padding-bottom: 40px
+	}
+
+	.Web-Dev span {
+		font-weight:lighter;
+		font-size:16px;
+	}
+
+	.IOS-Dev{
+		color: #0A4C4D;
+		font-weight:bold;
+		font-size:20px;
+	}
+
+	.IOS-Dev span{
+		font-weight:lighter;
+		font-size:16px;
+	}
+}
